@@ -1,0 +1,5 @@
+export const APP_URL = 'https://app.myfinanceflow.online'
+export const EMAIL = 'financeflowappbr@gmail.com'
+export const INSTAGRAM_URL = 'https://instagram.com/financeflowappbr'
+export const INSTAGRAM_HANDLE = '@financeflowappbr'
+export const SITE_URL = 'https://myfinanceflow.online'

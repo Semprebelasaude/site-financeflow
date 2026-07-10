@@ -1,0 +1,111 @@
+# BRIEFING.md — Site FinanceFlow (institucional + vendas)
+
+## 0. Regras invioláveis deste projeto
+- Projeto NOVO e ISOLADO. Pasta: D:\Automacao\ClaudeCode\Projetos\Sites\site-financeflow
+- NÃO tocar em nada do app FinanceFlow: nem o repo Finance-Flow, nem o projeto Vercel "financeflow", nem o banco Neon. Este site não tem backend, não tem banco, não tem login.
+- Repo GitHub PRÓPRIO e novo. Projeto Vercel PRÓPRIO e novo.
+- Deploy: entregar PREVIEW no Vercel. NUNCA produção sem OK explícito do Vinicius (portão).
+- Domínio de destino (só na hora da produção, com OK): raiz myfinanceflow.online + www. ATENÇÃO: o domínio raiz já tem registros DNS de e-mail do Resend (MX, TXT, DKIM, SPF) — NÃO mexer neles; só adicionar os registros A/CNAME do Vercel. O app vive em app.myfinanceflow.online e NÃO se toca.
+- Todo conteúdo em português (BR).
+
+## 1. O que é o projeto
+Site profissional do FinanceFlow — um app web de gestão financeira PESSOAL e EMPRESARIAL para autônomos, MEIs e freelancers brasileiros. O app já existe e roda em app.myfinanceflow.online. Este site serve para: (a) apresentar e "vender" o app para novos usuários; (b) ser um manual de uso completo para quem já usa; (c) estar pronto para Google Ads (por isso as páginas legais são obrigatórias).
+
+O diferencial do app: separar finanças pessoais das do negócio numa ferramenta só, com lançamento manual (a pessoa digita o que gasta/recebe — não conecta o banco). É disciplina financeira, não automação bancária.
+
+## 2. Objetivo de negócio
+Ação principal desejada: a pessoa começar a usar o app grátis (botão que leva a app.myfinanceflow.online). Objetivo secundário: captar interessados no plano premium futuro (WhatsApp) numa lista de espera por e-mail.
+
+## 3. Público
+Autônomos, MEIs, freelancers e pequenos empresários brasileiros. Pessoas não-técnicas. Muitas têm dificuldade e um pouco de medo/vergonha de finanças. O tom precisa ser acolhedor, encorajador, nunca técnico ou intimidador.
+
+## 4. Estrutura do site (APENAS 2 páginas de conteúdo + legais)
+
+### PÁGINA 1 — Home (arquivo: uma página só, seções ancoradas)
+Seções, em ordem:
+1. HERÓI: promessa central — "Separe o que é seu do que é da empresa. Num lugar só." (ou variação). Subtítulo curto. CTA primário "Começar grátis" (→ https://app.myfinanceflow.online). CTA secundário "Ver como funciona" (→ página 2).
+2. O PROBLEMA: o autônomo mistura dinheiro pessoal e do negócio, não sabe o que sobra, vive no escuro. 3-4 dores curtas e humanas (baseadas nos ângulos reais: "você sabe o faturamento mas não o lucro", "o mês bom que ilude", "sem reserva pra imprevisto", "imposto que chega calado").
+3. A SOLUÇÃO / COMO FUNCIONA EM 3 PASSOS: (1) Lance o que entra e o que sai em segundos; (2) Separe automaticamente pessoal de empresa; (3) Veja para onde vai seu dinheiro em gráficos claros.
+4. DESTAQUES: 4-6 cards de benefício (não recurso técnico) — ex: "Enxergue seu lucro real", "Pessoal e empresa separados", "Orçamentos que avisam antes de estourar", "Metas com progresso visual". Cada card leva mentalmente à página de funcionalidades.
+5. SOBRE (narrativa impessoal, SEM NOME de pessoa): a história de um autônomo que se perdeu na mistura das próprias finanças, testou todos os apps do mercado, não achou nenhum que separasse bem pessoal de empresa mantendo tudo simples, e por isso criou o FinanceFlow. Tom honesto e próximo. NÃO citar nome próprio, NÃO usar foto de pessoa real.
+6. PREÇOS: dois planos lado a lado.
+   - GRÁTIS: "O FinanceFlow completo, de graça." Lista o que tem hoje (lançamentos, separação pessoal/empresa, dashboards, categorias, orçamentos, metas, exportação, instalável no celular). CTA "Começar grátis".
+   - PREMIUM (marcar "Em breve"): a experiência via WhatsApp — lançar gastos e receitas por mensagem e perguntar coisas tipo "quanto gastei com mercado esse mês?". SEM PREÇO exibido. CTA de exclusividade: "Quer ser um dos primeiros a usar? Envie um e-mail para financeflowappbr@gmail.com e avaliamos caso a caso." Enquadrar como acesso antecipado exclusivo, não como lista genérica.
+7. CONTATO: e-mail financeflowappbr@gmail.com + link para o Instagram @financeflowappbr (https://instagram.com/financeflowappbr). FAQ curto (4-6 perguntas: é grátis mesmo? preciso conectar meu banco? funciona no iPhone e Android? meus dados estão seguros? serve pra MEI? como instalo?).
+8. RODAPÉ: links legais (Privacidade, Termos, Cookies), contato, Instagram, aviso "versão beta".
+
+### PÁGINA 2 — Como usar o FinanceFlow (funcionalidades + guia, UNIFICADO)
+Esta é a página-MANUAL. Explica TUDO em linguagem de leigo, como se ensinasse a mãe a usar. PROIBIDO jargão: nada de "PWA", "scope", "hierárquico", "multi-tenant", "CSV" sem explicar. Sempre traduzir para o benefício/ação humana.
+
+Cobrir, com seções claras e navegáveis (índice lateral ou âncoras no topo):
+- O QUE É: um parágrafo acolhedor.
+- COMO INSTALAR NO CELULAR: passo a passo iPhone (Safari → Compartilhar → Adicionar à Tela de Início) e Android (Chrome → menu → Instalar app / Adicionar à tela inicial). Explicar que vira um app com ícone, sem baixar de loja. Explicar que também funciona no computador pelo navegador.
+- PRIMEIROS PASSOS: criar conta, e que já vêm 106 categorias prontas (dizer "categorias já prontas pra você, que você pode editar").
+- PESSOAL vs EMPRESA: o coração do app. Explicar que cada lançamento é marcado como pessoal ou da empresa, e por que isso muda tudo.
+- LANÇAR UMA RECEITA OU DESPESA: como registrar o que entrou/saiu em segundos; data, valor, categoria, forma de pagamento, observação, etiquetas. Mencionar a calculadora embutida.
+- O DASHBOARD (sua visão geral): saldo, o que entrou, o que saiu no mês; gráfico dos últimos meses; principais categorias; últimos lançamentos.
+- CATEGORIAS: como criar/editar, categorias-mãe e subcategorias (explicar como "grupos e subgrupos"), cor e ícone.
+- LANÇAMENTOS QUE SE REPETEM (recorrência e parcelamento): contas fixas todo mês (aluguel), valores que mudam (conta de luz — confirma o valor no mês), e compras parceladas (badge 3/12). Explicar que nascem "pendentes" e você confirma quando paga.
+- ORÇAMENTOS: definir um limite de gasto por categoria no mês, e o app avisa quando você se aproxima. Barra verde/amarelo/vermelho.
+- METAS: guardar pra um objetivo (reserva, viagem), com aportes e progresso visual.
+- EXPORTAR SEUS DADOS: baixar tudo numa planilha (Excel) quando quiser.
+- RECUPERAR SENHA / SEGURANÇA / CONTA: como redefinir senha por e-mail, trocar senha, e a garantia de que o app NÃO acessa a conta bancária de ninguém (lançamento é manual).
+- AJUDA: onde pedir suporte (financeflowappbr@gmail.com).
+
+Fonte de verdade do conteúdo: os handoffs do projeto (funcionalidades reais já implementadas). NÃO inventar recurso que não existe. Se em dúvida sobre um recurso, marcar como placeholder e avisar — nunca fabricar.
+
+### PÁGINAS LEGAIS (obrigatórias para Google Ads)
+- POLÍTICA DE PRIVACIDADE (LGPD): honesta sobre o que o app coleta (nome, e-mail, e os lançamentos financeiros que o próprio usuário digita), que NÃO há acesso a conta bancária, base legal, direitos do titular, contato do controlador (financeflowappbr@gmail.com), uso de cookies. Incluir nota de que é um documento inicial e pode ser revisado.
+- TERMOS DE USO: uso do serviço, que está em beta, sem garantia de disponibilidade, responsabilidade do usuário pelos próprios dados, contato.
+- POLÍTICA DE COOKIES + BANNER de consentimento (aceitar/recusar não-essenciais; opção mais privacy-preserving por padrão).
+
+## 5. DIREÇÃO DE ARTE (literal e obrigatória — NÃO suavizar para menos)
+Identidade herdada da marca (mesma dos posts de Instagram e do ícone do app):
+- Base: preto profundo (#0A0A0A) como fundo dominante nas seções de impacto (herói, destaques).
+- Acento ÚNICO: dourado/âmbar quente (#D4AF37), usado com intenção, não espalhado.
+- Texto: off-white (#F5F5F0). Contraste sempre AA no mínimo (obrigatório — auditor bloqueia se falhar).
+- IMPORTANTE — sofisticado MAS acolhedor, NÃO "luxo frio": o dourado é caloroso (puxar levemente para âmbar/cobre, não ouro metálico duro). Muito espaço para respiro. Tipografia amigável e humana (uma sans moderna calorosa, não uma serifada de luxo rígida). Cantos suaves. Micro-copy encorajador.
+- Nas seções de LEITURA LONGA (a página-manual e as legais): CLAREAR o fundo (off-white/creme com texto escuro) para legibilidade e conforto. Não forçar preto em página de manual — cansa e reduz leitura. O preto+dourado é para impacto; o claro é para ler.
+
+MOVIMENTO E 3D (o Vinicius pediu explicitamente — entregar com intensidade PERCEPTÍVEL, não tímida):
+- Animação de entrada nas seções (fade/slide com stagger), parallax suave, hover com resposta clara.
+- Um elemento 3D no herói (ex: moedas/gráfico/objeto financeiro em 3D leve com React Three Fiber, ou uma cena com profundidade e bloom sutil). Deve ser sofisticado e fluido, rodar liso no celular (degradar com elegância em telas fracas), e NUNCA travar o LCP. Se o 3D pesar no mobile, servir versão estática elegante.
+- Motion craft de verdade: nada de pulsação imperceptível ou sombra de 9%. Sombra e profundidade perceptíveis, mas de bom gosto.
+- Respeitar prefers-reduced-motion (acessibilidade).
+
+## 6. Stack e técnica
+- Next.js (App Router) + TypeScript + Tailwind. Motion (Framer Motion). React Three Fiber / Three.js para o 3D (usar a skill 3d-frontend). Design-taste obrigatória no pré-flight.
+- Site estático/institucional: SEM banco, SEM auth, SEM API de backend. Formulário de contato = mailto: para financeflowappbr@gmail.com (não construir backend de e-mail).
+- SEO: title/description por página, Open Graph, sitemap, favicon (o "F" dourado da marca), lang pt-BR, dados estruturados básicos. Termos-alvo: "controle financeiro para autônomos", "app financeiro MEI", "separar finanças pessoais e empresariais", "gestão financeira freelancer".
+- Performance (gate): LCP < 2.5s, INP < 200ms, CLS < 0.1. O 3D não pode quebrar isso.
+- Responsivo mobile-first, testar em 375px.
+- Acessibilidade: contraste AA, foco visível, alt em imagens, prefers-reduced-motion.
+
+## 7. Imagens
+Para toda imagem (se houver fotos), usar o MCP pexels (pexels_search_photos) com termo congruente ao contexto brasileiro de autônomos/pequenos negócios, e a URL real retornada (confirmar HTTP 200). PROIBIDO inventar URL, usar source.unsplash, deixar caixa cinza, ou foto com texto/placa/logo de terceiros. Preferir, porém, ILUSTRAÇÃO/ícones em line-art dourado (coerente com a marca) a fotos genéricas de banco de imagem, especialmente no herói e destaques. Ícones: lucide-react.
+
+## 8. Quantidades fixas (sem inventar além)
+- 2 páginas de conteúdo (Home + Como usar) + 3 legais (Privacidade, Termos, Cookies).
+- Home: 8 seções (listadas em 4).
+- Destaques: 6 cards.
+- FAQ: 6 perguntas.
+- Preços: 2 planos.
+- Manual: as ~13 seções listadas em 4.
+
+## 9. Dados reais a usar (não inventar outros)
+- App: https://app.myfinanceflow.online
+- E-mail de contato/lista de espera: financeflowappbr@gmail.com
+- Instagram: @financeflowappbr → https://instagram.com/financeflowappbr
+- 106 categorias prontas; separação pessoal/empresa; recorrência e parcelamento; orçamentos; metas; exportação para planilha; instalável no celular; recuperação de senha por e-mail; app em BETA.
+- NÃO inventar: número de usuários, depoimentos, prêmios, estatísticas. Se precisar de prova social e não houver, deixar placeholder honesto e avisar.
+
+## 10. Critérios de "pronto" (operáveis)
+- As 2 páginas + 3 legais existem, navegam entre si, links relativos funcionam.
+- Botões "Começar grátis" levam a app.myfinanceflow.online.
+- CTA de lista de espera abre e-mail para financeflowappbr@gmail.com.
+- Instagram linkado e abrindo.
+- Manual legível por leigo, sem jargão não explicado.
+- Herói com 3D/animação perceptível rodando liso no mobile, sem quebrar LCP.
+- Banner de cookies funcionando.
+- Contraste AA em tudo; prefers-reduced-motion respeitado.
+- Preview no Vercel entregue, com screenshots no relatório final.

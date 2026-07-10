@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-plus-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --color-brand-black: #0A0A0A;
+  --color-brand-gold: #D4AF37;
+  --color-brand-offwhite: #F5F5F0;
+  --color-brand-cream: #FAFAF7;
+  --color-brand-dark: #1A1A1A;
+  --radius-soft: 0.75rem;
+  --radius-card: 1rem;
+  --transition-base: 200ms ease;
+  --transition-slow: 500ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-black text-brand-offwhite antialiased;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-24 px-4 sm:px-6 lg:px-8;
+  }
+
+  .content-max {
+    @apply max-w-content mx-auto;
+  }
+}
+
+/* Scrollbar dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 3px;
+}
+
+/* Prose styles para páginas legais */
+.prose-legal h1 {
+  @apply text-3xl font-bold text-brand-dark mb-2;
+}
+
+.prose-legal h2 {
+  @apply text-xl font-semibold text-brand-dark mt-10 mb-4 pb-2 border-b border-gray-200;
+}
+
+.prose-legal p {
+  @apply text-brand-muted leading-relaxed mb-4;
+}
+
+.prose-legal ul {
+  @apply list-disc list-inside space-y-2 text-brand-muted mb-4;
+}
+
+.prose-legal li {
+  @apply leading-relaxed;
+}
+
+.prose-legal strong {
+  @apply text-brand-dark font-semibold;
+}
+
+.prose-legal a {
+  @apply text-brand-gold hover:underline;
+}
